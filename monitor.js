@@ -12,13 +12,18 @@ async function sendTeamsMessage(title, content, url) {
     "@context": "https://schema.org/extensions",
     "summary": "개인정보보호위원회 새 보도자료",
     "themeColor": "0078D4",
+    "originator": "개인정보위 알림봇",
     "sections": [{
       "activityTitle": "🔔 개인정보보호위원회 업데이트",
       "activitySubtitle": title,
+      "activityImage": "https://cdn-icons-png.flaticon.com/512/3094/3094837.png",
       "text": content,
       "facts": [{
         "name": "확인 시간:",
         "value": new Date().toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' })
+      }, {
+        "name": "모니터링 봇:",
+        "value": "개인정보위 알림봇 🤖"
       }]
     }],
     "potentialAction": [{
