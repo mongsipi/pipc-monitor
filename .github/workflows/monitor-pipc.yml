@@ -3,8 +3,8 @@ name: Monitor PIPC Website
 
 on:
   schedule:
-    # 매 6시간마다 실행 (00:00, 06:00, 12:00, 18:00 UTC)
-    - cron: '0 */6 * * *'
+    # 월~금 오전 9시 (한국시간) = UTC 0시
+    - cron: '0 0 * * 1-5'
   workflow_dispatch: # 수동 실행 가능
 
 jobs:
