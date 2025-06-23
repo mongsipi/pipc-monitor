@@ -12,7 +12,7 @@ async function sendTeamsMessage(title, content, url) {
     "@context": "https://schema.org/extensions",
     "summary": "개인정보보호위원회 새 보도자료",
     "themeColor": "0078D4",
-    "originator": "개인정보위 알림봇",
+    "originator": "개보위 알림봇",
     "sections": [{
       "activityTitle": "🔔 개인정보보호위원회 업데이트",
       "activitySubtitle": title,
